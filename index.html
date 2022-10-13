@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>DeathVerge</title>
+    <meta content="" name="descriptison" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <!-- <link href="assets/vendor/venobox/venobox.css" rel="stylesheet" /> -->
+    <!-- <link
+      href="assets/vendor/owl.carousel/assets/owl.carousel.min.css"
+      rel="stylesheet"
+    /> -->
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <!-- =======================================================
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+    <!-- =======================================================
+  * ThreadHost.de
+  * Edit-Author: EisLeis
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  </head>
+
+  <body>
+    <!-- ======= Top Bar ======= -->
+    <!-- <section id="topbar" class="d-none d-lg-block">
+    <div class="container d-flex">
+      <div class="contact-info mr-auto">
+        <i class="icofont-envelope"></i><a href="mailto:admin@feiergaming.de">admin@yourserver.de</a>
+        <i class="icofont-phone mail-icon"></i> TeamSpeak : yourserver.de
+      </div>
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+        <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+        <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+        <a href="#" class="skype"><i class="icofont-skype"></i></a>
+        <a href="#" class="linkedin"><i class="icofont-linkedin"></i></i></a>
+      </div>
+    </div>
+  </section> -->
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex align-items-center">
+      <div class="container d-flex align-items-center">
+        <div class="logo mr-auto">
+          <h1 class="text-light">
+            <a href="index.html">Death<span>Verge</span></a>
+          </h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        </div>
+
+        <nav class="nav-menu d-none d-lg-block">
+          <a id="server-ip" href="#play" onclick="copyIpClip(event)">IP: </a>
+        </nav>
+
+        <script>
+          const ip = "play.deathverge.ml (Click to copy)";
+          const ip_anchor_tag = document.getElementById("server-ip");
+          ip_anchor_tag.innerHTML += ip;
+          function copyIpClip(e) {
+            navigator.clipboard.writeText("play.deathverge.ml");
+            if (ip_anchor_tag.innerHTML.includes("✔")) return;
+            ip_anchor_tag.innerHTML += " ✔";
+            setTimeout(() => {
+              ip_anchor_tag.innerHTML = ip_anchor_tag.innerHTML.replace(
+                " ✔",
+                ""
+              );
+            }, 1000);
+          }
+        </script>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero">
+      <div class="hero-container">
+        <div
+          id="heroCarousel"
+          class="carousel slide carousel-fade"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+          <div class="carousel-inner" role="listbox">
+            <!-- Slide 1 -->
+            <div
+              class="carousel-item active"
+              style="background-image: url(assets/img/slide/slide-1.jpg)"
+            >
+              <div class="carousel-container">
+                <div class="carousel-content">
+                  <h2 class="animate__animated animate__fadeInDown">
+                    Custom Plugins and Datapacks!
+                  </h2>
+                  <p class="animate__animated animate__fadeInUp">
+                    New and Unique Minecraft experience
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div
+              class="carousel-item"
+              style="background-image: url(assets/img/slide/slide-2.jpg)"
+            >
+              <div class="carousel-container">
+                <div class="carousel-content">
+                  <h2 class="animate__animated animate__fadeInDown">
+                    Custom Lives System
+                  </h2>
+                  <p class="animate__animated animate__fadeInUp">
+                    Now, it's not only about your skill
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div
+              class="carousel-item"
+              style="background-image: url(assets/img/slide/slide-3.jpg)"
+            >
+              <div class="carousel-container">
+                <div class="carousel-content">
+                  <h2 class="animate__animated animate__fadeInDown">
+                    No rules!
+                  </h2>
+                  <p class="animate__animated animate__adeInUp">
+                    You can grief, destroy and abuse any bugs!
+                  </p>
+                  <p
+                    class="animate__animated animate__fadeInDown"
+                    style="font-size: 9px"
+                  >
+                    cheat clients not allowed tho
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a
+            class="carousel-control-prev"
+            href="#heroCarousel"
+            role="button"
+            data-slide="prev"
+          >
+            <span
+              class="carousel-control-prev-icon ri-arrow-left-line"
+              aria-hidden="true"
+            ></span>
+            <span class="sr-only">Previous</span>
+          </a>
+
+          <a
+            class="carousel-control-next"
+            href="#heroCarousel"
+            role="button"
+            data-slide="next"
+          >
+            <span
+              class="carousel-control-next-icon ri-arrow-right-line"
+              aria-hidden="true"
+            ></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero -->
+
+    <main id="main">
+      <!-- ======= Services Section ======= -->
+      <section id="services" class="services section-bg">
+        <div class="container">
+          <div class="section-title" id="info">
+            <h2>info</h2>
+            <p>First of all, there are only two rules on the server:</p>
+            <p>1. No cheat clients.</p>
+            <p>
+              2.
+              <strong>To have fun!!</strong>
+            </p>
+            <hr />
+            <p>
+              Every player starts with three lives and will lose one of them
+              when he's killed by <strong>another player</strong>
+            </p>
+            <p>
+              You can check how many lives you have left by running:
+              <a style="color: gray">/trigger mylives</a>
+            </p>
+            <hr />
+            <p>
+              Any group of three players can request to become a team. Team
+              members see each other when invisible, can use their team chat,
+              <strong>and most importantly</strong> can craft an anchor.
+            </p>
+            <p>
+              Your anchor will give your team <strong>any effect</strong> you
+              want, <strong>forever</strong>, until destroyed.
+            </p>
+          </div>
+          <br />
+          <hr />
+          <br />
+
+          <div class="section-title" id="requirements">
+            <h2>Requirements</h2>
+            <div id="optifine">
+              <h3>
+                <a href="https://requirements.deathverge.ml/optifine"
+                  >Optifine</a
+                >
+              </h3>
+              <p>
+                Optifine is a good mod to install for any minecraft world, but
+                especially for DeathVerge server that uses custom recipes and
+                textures.
+              </p>
+              <p>Don't you want to enjoy crafting?</p>
+              <a href="https://requirements.deathverge.ml/optifine"
+                >https://requirements.deathverge.ml/optifine</a
+              >
+              <hr />
+              <br />
+            </div>
+            <div id="voicechat">
+              <h3>
+                <a href="https://requirements.deathverge.ml/voicechat"
+                  >VoiceChat Mod</a
+                >
+              </h3>
+              <p>
+                DeathVerge server supports and encourages players to download
+                and install VC mod.
+              </p>
+              <p>
+                Not only it's very easy but also it's statistically proven, the
+                mod leads to more interesting situations you and your friends
+                will enjoy!
+              </p>
+              <a href="https://requirements.deathverge.ml/voicechat"
+                >https://requirements.deathverge.ml/voicechat</a
+              >
+              <hr />
+              <br />
+            </div>
+            <div id="forge">
+              <h3>
+                <a href="https://requirements.deathverge.ml/forge">Forge</a>
+              </h3>
+              <p>
+                Minecraft Forge is an add-on for Minecraft that lets you install
+                and enable mods like Optifine and VoiceChat.
+              </p>
+              <a href="https://requirements.deathverge.ml/forge"
+                >https://requirements.deathverge.ml/forge</a
+              >
+              <hr />
+              <br />
+            </div>
+            <div id="resourcepack">
+              <h3>
+                <a href="https://requirements.deathverge.ml/resourcepack"
+                  >DeathVerge ResourcePack</a
+                >
+              </h3>
+              <p>
+                If the ResourcePack is not downloaded automatically when you
+                join the server, you can install it manually with our link.
+              </p>
+              <a href="https://requirements.deathverge.ml/resourcepack"
+                >https://requirements.deathverge.ml/resourcepack</a
+              >
+              <hr />
+              <br />
+            </div>
+          </div>
+
+          <div class="section-title" id="play">
+            <h2>Start Playing</h2>
+            <p>
+              To start playing, copy the IP in the top right corner and join the
+              server with Minecraft v1.19.2!
+            </p>
+            <br />
+            <p>If you face any problems, please contact one of our admins.</p>
+          </div>
+        </div>
+      </section>
+      <!-- End Services Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="credits">
+        <p><strong>Email:</strong> admin@deathverge.ml</p>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>deathverge.ml</span></strong
+          >. All Rights Reserved.
+        </div>
+        <div class="credits">
+          <p>Icons from <a href=https://icofont.com/>icofont</a> are licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</a></p>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+    <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="assets/vendor/counterup/counterup.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/venobox/venobox.min.js"></script>
+    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
